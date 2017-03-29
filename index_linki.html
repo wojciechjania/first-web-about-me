@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+<meta charset="utf-8"
+<meta http-equiv="X-UE-Compatibile" content="IE=egde,chrome=1"/>
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="css/fontello.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+
+<script type="text/javascript">
+function odliczanie()
+{ var dzisiaj = new Date();
+ var dzien = dzisiaj.getDate();
+ var miesiac = dzisiaj.getMonth()+1;
+ var rok = dzisiaj.getFullYear();
+ 
+ var godzina = dzisiaj.getHours();
+ if(godzina<10)godzina="0"+godzina;
+ 
+ var minutes = dzisiaj.getMinutes();
+ if(minutes<10)minutes="0"+minutes;
+
+ var sekunda = dzisiaj.getSeconds();
+ if(sekunda<10)sekunda="0"+sekunda;
+ 
+ document.getElementById("zegar").innerHTML=dzien+"/"+miesiac+"/"+rok+"</br>"+godzina+":"+minutes+":"+sekunda;
+ 
+ setTimeout("odliczanie()",1000);
+ }
+ 
+</script>
+</head>
+<body onload="odliczanie();">
+			<div id="container">
+	<div class="rectangle"></div>
+			<div id="logo"><a href="index_linki.html" class="tilelinkhtml5">Wojtek Jania</a></div>
+	<div id="zegar">
+	</div>
+	
+	
+					<div style="clear:both;"></div>
+	
+	<div class="square">
+	<div class="tile1"> 
+		<a href="kimjestem.html" class="tilelink">	<i class="icon-user"> </br> Kim jestem ?</i></a>
+	</div>
+	<a href="oferta.html" class="tilelinkhtml5"><div class="tile1">
+			<i class="icon-laptop"></i> </br> Co oferuje ?
+	</div></a>
+	
+					<div  style="clear:both;"></div>
+	<a href="cv.html" class="tilelinkhtml5"><div class="tile2">
+		<i class="icon-graduation-cap"></br>Curriculm Vitae</i>
+	</div><a>
+	<a href="kontakt.html" class="tilelinkhtml5"><div class="tile3"><i class="icon-mail"></i></br>Kontakt</div></a>
+					<div  style="clear:both;"></div>
+	<div class="tile4"><i>Talk is cheap. Show me the code!</br> Linus Torvalds, twórca Linuxa.</i></div>
+	</div>
+					
+		<div class="square">
+		<div class="tile5">Dwa zdania o mnie. </br></br> W latach 1769–1773 Wolfgang i Leopold Mozartowie odbyli trzy podróże do Włoch. W czasie pierwszej, która trwała 15 miesięcy, odwiedzili najważniejsze włoskie miasta, gdzie młody kompozytor występował przed arystokracją i dla szerokiej publiczności. Celem drugiej i trzeciej był Mediolan, gdzie Mozart miał ukończyć opery, których stworzenie zlecono mu w czasie pierwszej wizyty w mieście. </div>
+		<a href="https://www.youtube.com/channel/UC7P7p5tEe-dY67oXuuK669Q" target="_blank" class="sociallink"> <div class="yt"><i class="icon-youtube-squared"></i></div></a>
+		<a href="https://www.facebook.com/aloftpl/" target="_blank" class="sociallink"><div class="fb"><i class="icon-facebook"></i></div></a>
+		<a href="https://plus.google.com/u/0/107380311652979235963" target="_blank" class="sociallink"><div class="google"> <i class="icon-gplus"></i></div></a>
+		<div class="tw"><i class="icon-twitter"></i></div>
+		<div style="clear:both;"></div>
+	</div>
+					<div style="clear:both;"></div>
+	<div class="rectangle">2016 &copt, Wojciech Jania -portfolio, programista webowy ,zapraszam do wspólpracy.<i class="icon-mail-1"></i> biuro@aloft.pl ! 
+	</div>
+		</div>
+		
+
+</body>
+</html>
